@@ -1,46 +1,6 @@
-// import React from "react";
-// import Link from "next/link";
-// import { AnimatePresence, motion } from "framer-motion";
-// import { aparecerLinks, aparecerNav } from "../animations/Nav";
-// export const Nav = () => {
-//   const enlaces = [
-//     { text: "Experiencia", id: "#Experience" },
-//     { text: "Projectos", id: "#Projects" },
-//     { text: "Habilidades", id: "#Skills" },
-//     { text: "Educación", id: "#Education" },
-//     { text: "Contacto", id: "#Contact" },
-//   ];
+import React from "react";
 
-//   return (
-//     <motion.nav
-//       // initial={aparecerNav.initial}
-//       // animate={aparecerNav.animate}
-//       // transition={aparecerNav.transition}
-//       className="w-full bg-red-200 py-4 flex items-center justify-center gap-20"
-//     >
-//       <AnimatePresence>
-//         {enlaces.map((el, i) => (
-//           <div key={el.id} className="w-24 py-4 relative">
-//             <Link href={el.id}>
-//               <motion.button
-//                 initial={{ top: -100 }}
-//                 animate={{ top: 0 }}
-//                 transition={{ duration: 0.5, delay: i * 0.2 }}
-//                 className="absolute"
-//               >
-//                 {el.text}
-//               </motion.button>
-//             </Link>
-//           </div>
-//         ))}
-//       </AnimatePresence>
-//     </motion.nav>
-//   );
-// };
-import React, { useEffect } from "react";
-
-export const Nav = () => {
-  // useEffect(()=>{
+export const NavWeb = () => {
   if (typeof window !== "undefined") {
     const menu = document?.getElementById("menu");
     const indicador = document?.getElementById("indicador");
@@ -85,12 +45,11 @@ export const Nav = () => {
     };
     window.addEventListener("resize", onResize);
   }
-  // },[])
 
   return (
     <nav
       id="menu"
-      className="w-full flex bg-[#fff] shadow-xl h-[10vh] sticky top-0 overflow-hidden"
+      className="w-full hidden sm:flex bg-[#fff] shadow-xl h-[10vh] sticky top-0 overflow-hidden sm:text-lg text-xs"
     >
       <a
         href="#Projects"

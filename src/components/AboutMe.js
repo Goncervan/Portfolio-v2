@@ -6,7 +6,7 @@ export const AboutMe = () => {
   return (
     <div
       id="hero"
-      className="w-full h-[90vh] bg-red-500"
+      className="w-full h-[90vh] bg-customDarkBlue"
     >
       AboutMe
     </div>
