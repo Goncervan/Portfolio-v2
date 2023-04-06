@@ -1,5 +1,4 @@
 import React from "react";
-
 export const NavWeb = () => {
   if (typeof window !== "undefined") {
     const menu = document?.getElementById("menu");
@@ -64,12 +63,6 @@ export const NavWeb = () => {
         Experiencia
       </a>
       <a
-        href="#Skills"
-        className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer"
-      >
-        Habilidades
-      </a>
-      <a
         href="#Education"
         className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer"
       >
@@ -82,7 +75,7 @@ export const NavWeb = () => {
       </a>
       <span
         id="indicador"
-        className="w-[0px] h-[7px] bg-[#113cfc] absolute bottom-0 transition-all"
+        className="w-[0px] h-[7px] bg-customBlue absolute bottom-0 transition-all"
       ></span>
     </nav>
   );

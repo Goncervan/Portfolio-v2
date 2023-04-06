@@ -1,8 +1,7 @@
-import { AboutMe } from "../src/components/AboutMe";
+import { AboutMe } from "../src/components/AboutMe/AboutMe";
 import { Projects } from "../src/components/Projects";
 import { NavWeb } from "../src/components/Navs/NavWeb";
 import { Experience } from "../src/components/Experience";
-import { Skills } from "../src/components/Skills";
 import { Education } from "../src/components/Education";
 import { Contact } from "../src/components/Contact";
 import { Presentation } from "../src/components/Presentation";
@@ -16,7 +15,6 @@ export default function Home() {
       <NavMobile />
       <Projects />
       <Experience />
-      <Skills />
       <Education />
       <Contact />
     </div>

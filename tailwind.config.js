@@ -11,9 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        customDarkBlue:'#181823',
-        customPrimaryBlue:'#537FE7',
-        customSecondaryBlue:'#537FE7',
+        bgBlack:'#000000',
+        customBlue:'#1AB1C6',
+        customGray:'#292929',
         customLigthBlue:'#E9F8F9',
       }
     },
