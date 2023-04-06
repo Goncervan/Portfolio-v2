@@ -14,9 +14,9 @@ export default function Home() {
       <AboutMe />
       <NavWeb />
       <NavMobile />
+      <Skills />
       <Projects />
       <Experience />
-      <Skills />
       <Education />
       <Contact />
     </div>
