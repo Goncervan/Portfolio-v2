@@ -12,7 +12,7 @@ export const AboutMe = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, type: "spring" }}
         viewport={{ once: true }}
-        className="w-4/5 flex items-start justify-center gap-10"
+        className="w-4/5 flex items-start justify-between gap-10"
       >
         <section className="w-2/5 flex flex-col items-start justify-start">
           <h1 className="text-[45px] text-white font-bold uppercase mb-10 relative">
@@ -49,13 +49,13 @@ export const AboutMe = () => {
             Habilidades
           </h1>
           <ul className="w-full flex flex-wrap items-start justify-center gap-5 px-4">
-            <li className="text-white text-xl">- Trabajo en equipo</li>
-            <li className="text-white text-xl">- Creatividad</li>
-            <li className="text-white text-xl">- Atención al detalle</li>
-            <li className="text-white text-xl">- Buena comunicación</li>
-            <li className="text-white text-xl">- Pensamiento crítico</li>
-            <li className="text-white text-xl">- Adaptabilidad</li>
-            <li className="text-white text-xl">- Curiosidad</li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Trabajo en equipo</li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Creatividad</li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Curiosidad</li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Atención al detalle</li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Adaptabilidad</li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Buena comunicación</li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Pensamiento crítico</li>
           </ul>
         </section>
       </motion.div>

@@ -51,12 +51,6 @@ export const NavWeb = () => {
       className="w-full hidden sm:flex bg-[#fff] shadow-xl h-[10vh] sticky top-0 overflow-hidden sm:text-lg text-xs"
     >
       <a
-        href="#Skills"
-        className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer"
-      >
-        Habilidades
-      </a>
-      <a
         href="#Projects"
         className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer"
       >
@@ -81,7 +75,7 @@ export const NavWeb = () => {
       </a>
       <span
         id="indicador"
-        className="w-[0px] h-[7px] bg-gray-600 absolute bottom-0 transition-all"
+        className="w-[0px] h-[7px] bg-customBlue absolute bottom-0 transition-all"
       ></span>
     </nav>
   );
