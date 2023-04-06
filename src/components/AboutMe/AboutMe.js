@@ -5,7 +5,7 @@ export const AboutMe = () => {
   return (
     <div
       id="hero"
-      className="w-full min-h-[90vh] bg-customGray flex flex-col items-center justify-center overflow-hidden"
+      className="w-full min-h-[90vh] bg-customGray flex flex-col items-center justify-center overflow-hidden pb-10"
     >
       <motion.div
         initial={{ y: 500, opacity: 0 }}
