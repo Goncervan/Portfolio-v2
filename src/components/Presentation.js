@@ -9,13 +9,13 @@ export const Presentation = () => {
         <p className="text-white font-semibold text-lg">Gonzalo Cervan</p>
         <p className="text-white font-semibold text-lg">gonfedecer@gmail.com</p>
       </div>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{duration:2}} className="w-1/2">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{duration:2}} className="w-1/2 h-full flex flex-col items-start pt-20 justify-center">
         <h1 className="text-[5rem] text-white font-bold">FRONT</h1>
         <h1 className="text-[5rem] italic text-white font-bold">
           END <span className="font-normal">{"</>"}</span>
         </h1>
         <h1 className="text-[5rem] text-white font-bold">DEVELOPER</h1>
-        <button className="text-xl text-customBlue border-2 border-customBlue rounded-full px-4 py-1 focus:outline-none ml-28">Contacto</button>
+        <button className="text-xl text-customBlue border-2 border-customBlue rounded-full px-4 py-1 focus:outline-none ml-28 mt-10">Contacto</button>
       </motion.div>
       <div className="w-1/2"></div>
     </div>
