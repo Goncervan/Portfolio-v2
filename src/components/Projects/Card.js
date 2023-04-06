@@ -1,8 +1,12 @@
 import React from "react";
 import Image from "next/image";
-export const Card = ({ title, description, img, link }) => {
+export const Card = ({ title, description, img, link, index }) => {
   return (
-    <div className="w-full border-b border-white flex justify-between border-opacity-20 px-40 py-8">
+    <div
+      className={`w-full border-b border-white flex ${
+        index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+      } justify-between border-opacity-20 px-40 py-8`}
+    >
       <div className="w-2/5 flex flex-col items-center justify-center h-[250px]">
         <h3 className="text-2xl text-white flex-1">{title}</h3>
         <p className="text-customBlue flex-1 text-center">{description}</p>
