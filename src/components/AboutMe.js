@@ -6,14 +6,16 @@ export const AboutMe = () => {
   return (
     <div
       id="hero"
-      className="w-full h-[90vh] bg-customDarkBlue flex items-center justify-center gap-10 overflow-x-hidden"
+      className="w-full h-[90vh] bg-customDarkBlue flex items-center justify-center overflow-hidden"
     >
+ 
+      
       <motion.div
-        initial={{ x: -500, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: 500, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, type: "spring" }}
         viewport={{ once: true }}
-        className="w-2/5 flex items-end justify-end"
+        className="w-4/5 flex items-center justify-center gap-10"
       >
         <Image
           src={FotoPerfil}
@@ -21,18 +23,11 @@ export const AboutMe = () => {
           height={200}
           alt="Foto de perfil de Gonzalo Cervan"
         />
-      </motion.div>
-      <motion.div
-        initial={{ x: 500, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: true }}
-        className="w-3/5 flex items-start justify-start flex-col"
-      >
+      <div className="w-2/5 flex flex-col items-start justify-start">
         <h1 className="text-[45px] text-customLigthBlue mb-10 font-bold">
           Acerca de mí
         </h1>
-        <ul className="flex flex-col gap-4 w-2/3">
+        <ul className="flex flex-col gap-4 w-full">
           <li>
             <p className="text-customLigthBlue text-xl">
               Mi nombre es Gonzalo Cervan, tengo 21 años y soy de Argentina.
@@ -54,6 +49,7 @@ export const AboutMe = () => {
         <button className="ml-20 text-customLigthBlue mt-10 font-semibold border-2 py-2 px-5 border-customLigthBlue hover:scale-110 transition-transform">
           Ver mi CV
         </button>
+      </div>
       </motion.div>
     </div>
   );

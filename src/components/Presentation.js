@@ -20,7 +20,7 @@ export const Presentation = () => {
           transition={{ delay: 1, duration: 1.75}}
           className="text-3xl text-customSecondaryBlue font-bold"
         >
-          Front.
+          Front
         </motion.li>
         <motion.li
           initial={{ opacity: 0 }}
@@ -28,7 +28,7 @@ export const Presentation = () => {
           transition={{ delay: 1.5, duration: 1.75}}
           className="text-3xl text-customSecondaryBlue font-bold"
         >
-          End.
+          End
         </motion.li>
         <motion.li
           initial={{ opacity: 0 }}
@@ -36,7 +36,7 @@ export const Presentation = () => {
           transition={{ delay: 2, duration: 1.75}}
           className="text-3xl text-customSecondaryBlue font-bold"
         >
-          Developer.
+          Developer
         </motion.li>
       </ul>
     </div>
