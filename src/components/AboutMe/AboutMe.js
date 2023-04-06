@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { SiJavascript } from "react-icons/si";
+import { Skills } from "./Skills";
 export const AboutMe = () => {
   return (
     <div
       id="hero"
-      className="w-full h-[90vh] bg-customGray flex items-center justify-center overflow-hidden"
+      className="w-full min-h-[90vh] bg-customGray flex flex-col items-center justify-center overflow-hidden"
     >
       <motion.div
         initial={{ y: 500, opacity: 0 }}
@@ -15,7 +15,7 @@ export const AboutMe = () => {
         className="w-4/5 flex items-start justify-between gap-10"
       >
         <section className="w-2/5 flex flex-col items-start justify-start">
-          <h1 className="text-[45px] text-white font-bold uppercase mb-10 relative">
+          <h1 className="text-[35px] text-white font-bold uppercase mb-10 relative">
             <span className="text-customBlue absolute -left-5">. </span>
             Acerca de mí
           </h1>
@@ -44,21 +44,36 @@ export const AboutMe = () => {
           </button>
         </section>
         <section className="w-2/5 h-full flex flex-col items-center justify-start">
-          <h1 className="text-[45px] text-white font-bold uppercase relative mb-10">
+          <h1 className="text-[35px] text-white font-bold uppercase relative mb-10">
             <span className="text-customBlue absolute -left-5">. </span>
             Habilidades
           </h1>
           <ul className="w-full flex flex-wrap items-start justify-center gap-5 px-4">
-            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Trabajo en equipo</li>
-            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Creatividad</li>
-            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Curiosidad</li>
-            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Atención al detalle</li>
-            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Adaptabilidad</li>
-            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Buena comunicación</li>
-            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">Pensamiento crítico</li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Trabajo en equipo
+            </li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Creatividad
+            </li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Curiosidad
+            </li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Atención al detalle
+            </li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Adaptabilidad
+            </li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Buena comunicación
+            </li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Pensamiento crítico
+            </li>
           </ul>
         </section>
       </motion.div>
+      <Skills></Skills>
     </div>
   );
 };

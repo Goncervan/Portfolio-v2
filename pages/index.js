@@ -1,4 +1,4 @@
-import { AboutMe } from "../src/components/AboutMe";
+import { AboutMe } from "../src/components/AboutMe/AboutMe";
 import { Projects } from "../src/components/Projects";
 import { NavWeb } from "../src/components/Navs/NavWeb";
 import { Experience } from "../src/components/Experience";
