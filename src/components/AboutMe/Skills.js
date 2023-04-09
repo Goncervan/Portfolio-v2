@@ -52,7 +52,7 @@ export const Skills = () => {
               ) : null}
             </AnimatePresence>
           </motion.div>
-          <el.icon className="text-[50px] text-white relative transition-all cursor-pointer" />
+          <el.icon className="text-[50px] text-white inline sm:hidden relative transition-all cursor-pointer" />
         </>
       ))}
     </div>
