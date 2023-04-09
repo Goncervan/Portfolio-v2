@@ -38,14 +38,14 @@ export const Contact = () => {
   return (
     <div
       id="Contact"
-      className="w-full bg-bgBlack seccion flex items-end justify-evenly p-20"
+      className="w-full bg-bgBlack seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
     >
-      <div className="w-1/3 h-[450px] flex items-center justify-start flex-col py-10 gap-10">
+      <div className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-start flex-col py-10 gap-5 sm:gap-10">
         <div className="w-full text-center">
-          <h1 className="text-white text-2xl font-semibold mb-2">Contactame</h1>
+          <h1 className="text-white text-3xl sm:text-2xl font-semibold mb-2">Contactame</h1>
           <h2 className="text-white text-xl mb-5">Creemos algo increible!</h2>
         </div>
-        <ul className="w-1/2 flex flex-col gap-10">
+        <ul className="w-full sm:w-1/2 flex flex-col gap-10">
           <li className="flex-1">
             <a
               className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-600 px-5 py-2"
@@ -82,7 +82,7 @@ export const Contact = () => {
         <form
           onSubmit={(e) => sendEmail(e)}
           ref={form}
-          className="w-1/3 h-[450px] flex items-center justify-center flex-col py-10 gap-10"
+          className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-center flex-col pt-10 sm:py-10 gap-10"
         >
           <div className="relative group w-full">
             <input
@@ -139,7 +139,7 @@ export const Contact = () => {
             <input
               type="submit"
               value="Enviar"
-              className="w-1/2 bg-customBlue text-white py-1 rounded-full cursor-pointer focus:outline-none focus:scale-110 transition-transform"
+              className="w-3/4 sm:w-1/2 bg-customBlue text-white py-1 rounded-full cursor-pointer focus:outline-none focus:scale-110 transition-transform"
             />
           )}
         </form>
