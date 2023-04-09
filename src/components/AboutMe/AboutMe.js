@@ -50,6 +50,9 @@ export const AboutMe = () => {
           </h1>
           <ul className="w-full flex flex-wrap items-start justify-center gap-5 px-4">
             <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Ingles Avanzado
+            </li>
+            <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
               Trabajo en equipo
             </li>
             <li className="text-white text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">

@@ -43,7 +43,7 @@ export const Skills = () => {
                 initial={{ opacity: 0, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ type: "just", duration:.2 }}
-                exit={{ opacity: 0, y: 200 }}
+                exit={{ opacity: 0, y: -500 }}
                 className="text-white absolute -bottom-8"
               >
                 {el.text}
