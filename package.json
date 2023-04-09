@@ -1,4 +1,5 @@
 {
+  "homepage":"https://github.com/Goncervan/Portfolio-v2",
   "name": "portfolio2",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build"
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
@@ -23,6 +26,7 @@
   },
   "devDependencies": {
     "eslint": "8.37.0",
-    "eslint-config-next": "13.2.4"
+    "eslint-config-next": "13.2.4",
+    "gh-pages": "^5.0.0"
   }
 }

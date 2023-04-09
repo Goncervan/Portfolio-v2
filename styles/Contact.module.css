@@ -1,19 +1,18 @@
 .inputName:focus ~ .spanName, .inputName:valid ~ .spanName{
     bottom: 50px;
-    color: #fff;
+    color: #1AB1C6;
     font-size: larger;
 }
 .inputEmail:focus ~ .spanEmail, .inputEmail:valid ~ .spanEmail{
     bottom: 50px;
-    color: #fff;
+    color: #1AB1C6;
     font-size: larger;
 }
 .inputMessage:focus ~ .spanMessage, .inputMessage:valid ~ .spanMessage{
     top: -40px;
-    color: #fff;
+    color: #1AB1C6;
     font-size: larger;
 }
 .spanMessage, .spanEmail, .spanName{
     pointer-events: none;
-
 }
