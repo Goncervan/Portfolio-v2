@@ -145,12 +145,12 @@ export const Contact = () => {
         </form>
       )}
       {error.length > 0 && (
-        <div className="w-1/3 h-[450px] flex items-center justify-center">
+        <div className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-center">
           <p className="text-white text-2xl">{error}</p>
         </div>
       )}
       {result.length > 0 && (
-        <div className="w-1/3 h-[450px] flex items-center justify-center gap-5">
+        <div className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-center">
           <p className="text-white text-2xl">{result}</p>
         </div>
       )}
