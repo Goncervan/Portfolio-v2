@@ -4,7 +4,7 @@ import Image from "next/image";
 import FotoPerfil from "../../public/Imagenes/Foto.jpg";
 export const Presentation = () => {
   return (
-    <div className="w-full h-[90vh] bg-customGray flex items-start justify-center flex-col px-10 sm:px-28">
+    <div id="Presentation" className="w-full h-[90vh] bg-customGray flex items-start justify-center flex-col px-10 sm:px-28">
       <div className="w-full absolute top-0 left-0 border-b-2 border-gray-600 h-14 flex justify-between items-center pr-20 pl-10">
         <p className="text-white font-semibold text-base sm:text-lg">
           Gonzalo Cervan
