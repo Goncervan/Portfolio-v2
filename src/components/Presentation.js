@@ -4,9 +4,9 @@ import Image from "next/image";
 import FotoPerfil from "../../public/Imagenes/Foto.jpg";
 export const Presentation = () => {
   return (
-    <div id="Presentation" className="w-full h-[90vh] bg-customGray flex items-start justify-center flex-col px-10 sm:px-28">
-      <div className="w-full absolute top-0 left-0 border-b-2 border-gray-600 h-14 flex justify-between items-center pr-20 pl-10">
-        <p className="text-white font-semibold text-base sm:text-lg">
+    <div id="Presentation" className="w-full h-[70vh] sm:h-[90vh] bg-customGray flex items-start justify-center flex-col px-10 sm:px-28">
+      <div className="w-full hidden absolute top-0 left-0 border-b-2 border-gray-600 h-14 sm:flex justify-between items-center pr-20 pl-10">
+        <p className="text-white font-semibold text-xlg">
           Gonzalo Cervan
         </p>
         <p className="text-white font-semibold sm:inline hidden sm:text-lg">
@@ -19,6 +19,9 @@ export const Presentation = () => {
         transition={{ duration: 2, delay: 0.6 }}
         className="w-full sm:w-1/2 h-full flex flex-col items-start pt-5 sm:pt-20 justify-center"
       >
+        <p className="text-white sm:hidden inline font-semibold text-[2rem]">
+          Gonzalo Cervan
+        </p>
         <h1 className="text-[3rem] sm:text-[5rem] text-white font-bold">
           FRONT
         </h1>

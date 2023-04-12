@@ -20,7 +20,7 @@ export default function Home() {
         <NavMobile />
         <Projects />
         <Experience />
-        <Education />
+        {/* <Education /> */}
         <Contact />
       </div>
     </>

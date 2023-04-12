@@ -14,9 +14,11 @@ export const AboutMe = () => {
         viewport={{ once: true }}
         className="w-full sm:w-4/5 flex flex-col sm:flex-row items-start justify-between gap-10"
       >
-        <section className="w-full sm:w-2/5 flex flex-col items-start justify-start">
+        <section className="w-full sm:w-2/5 flex flex-col items-center justify-center sm:items-start sm:justify-start">
           <h1 className="text-3xl sm:text-[35px] text-white font-bold uppercase mb-4 sm:mb-10 relative">
-            <span className="text-customBlue absolute -left-3 sm:-left-5">. </span>
+            <span className="text-customBlue absolute -left-3 sm:-left-5">
+              .{" "}
+            </span>
             Acerca de mí
           </h1>
           <ul className="flex flex-col gap-4 w-full">
@@ -39,13 +41,15 @@ export const AboutMe = () => {
               </p>
             </li>
           </ul>
-          <button className="ml-20 text-customBlue mt-10 font-semibold border-2 py-2 px-5 border-customBlue hover:scale-110 transition-transform">
+          <button className="sm:ml-20 text-customBlue mt-10 font-semibold border-2 py-2 px-5 border-customBlue hover:scale-110 transition-transform">
             Ver mi CV
           </button>
         </section>
         <section className="w-full sm:w-2/5 h-full flex flex-col items-center justify-start">
           <h1 className="text-3xl sm:text-[35px] text-white font-bold uppercase relative mb-10">
-            <span className="text-customBlue absolute -left-3 sm:-left-5">. </span>
+            <span className="text-customBlue absolute -left-3 sm:-left-5">
+              .{" "}
+            </span>
             Habilidades
           </h1>
           <ul className="w-full flex flex-wrap items-start justify-center gap-5 sm:px-4">
@@ -76,7 +80,11 @@ export const AboutMe = () => {
           </ul>
         </section>
       </motion.div>
-      <Skills/>
+      <h1 className="text-3xl sm:text-[35px] text-white font-bold uppercase relative mt-20">
+        <span className="text-customBlue absolute -left-3 sm:-left-5">. </span>
+        Tecnologias
+      </h1>
+      <Skills />
     </div>
   );
 };
