@@ -48,7 +48,7 @@ export const NavWeb = () => {
   return (
     <nav
       id="menu"
-      className="w-full hidden sm:flex bg-[#fff] shadow-xl h-[10vh] sticky top-0 overflow-hidden sm:text-lg text-xs"
+      className="w-full hidden sm:flex bg-[#fff] shadow-xl h-[10vh] sticky top-0 overflow-hidden sm:text-lg text-xs z-[999]"
     >
       <a
         href="#Projects"
