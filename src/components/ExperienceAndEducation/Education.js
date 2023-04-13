@@ -8,7 +8,7 @@ export const Education = () => {
         <span className="text-customBlue absolute -left-3 sm:-left-5">. </span>
         Educación
       </h1>
-      <ol className="w-full flex flex-col items-center justify-center gap-20">
+      <ol className="w-full flex flex-col items-center justify-center gap-6 sm:gap-20">
         {cursos.map(curso => (
           <CoursesCard key={curso.key} {...curso}/>
         ))}

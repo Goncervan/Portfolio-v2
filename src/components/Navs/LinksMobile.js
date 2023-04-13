@@ -4,10 +4,9 @@ import { container, listItemEven, listItemOdd } from "../../animations/Nav";
 export const LinksMobile = ({ setVerNav }) => {
   const links = [
     { id: 0, href: "#Presentation", text: "Presentación" },
-    { id: 1, href: "#Hero", text: "Acerca de mí" },
+    { id: 1, href: "#hero", text: "Acerca de mí" },
     { id: 2, href: "#Projects", text: "Proyectos" },
-    { id: 3, href: "#Experience", text: "Experiencia" },
-    { id: 4, href: "#Education", text: "Educación" },
+    { id: 3, href: "#Experience", text: "Experiencia y Educación" },
     { id: 5, href: "#Contact", text: "Contacto" },
   ];
   return (

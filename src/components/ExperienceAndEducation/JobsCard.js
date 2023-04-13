@@ -30,7 +30,7 @@ export const JobsCard = ({
           {puntosClave.map((punto, i) => (
             <li key={i} className="w-full text-left relative pl-4">
               <VscDebugBreakpointLogUnverified className="absolute left-0 top-1 text-customBlue" />
-              <span className="text-sm sm:text-base">{punto}</span>
+              <span className="text-base">{punto}</span>
             </li>
           ))}
         </ul>

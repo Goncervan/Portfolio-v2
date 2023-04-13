@@ -8,7 +8,7 @@ export const Card = ({ title, description, img, link, index }) => {
         index % 2 === 0
           ? "flex-col md:flex-row"
           : "flex-col md:flex-row-reverse"
-      } justify-between sm:gap-0 gap-5 border-opacity-20 px-10 lg:px-40 py-12 flex-1`}
+      } justify-between sm:gap-0 gap-5 border-opacity-20 px-5 lg:px-40 py-12 flex-1`}
     >
       <div className="w-full md:w-2/5 flex flex-col items-center justify-center">
         <h3 className="text-2xl text-white flex-1">{title}</h3>
