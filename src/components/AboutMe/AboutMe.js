@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Skills } from "./Skills";
+import { DownloadPdf } from "./DownloadPdf";
 export const AboutMe = () => {
   return (
     <div
@@ -47,9 +48,7 @@ export const AboutMe = () => {
               </p>
             </li>
           </ul>
-          <button className="sm:ml-20 text-customBlue mt-10 font-semibold border-2 py-2 px-5 border-customBlue hover:scale-110 transition-transform">
-            Ver mi CV
-          </button>
+        <DownloadPdf/>
         </section>
         <section className="w-full sm:w-2/5 h-full flex flex-col items-center justify-start">
           <h1 className="text-3xl sm:text-[35px] text-white font-bold uppercase relative mb-10">

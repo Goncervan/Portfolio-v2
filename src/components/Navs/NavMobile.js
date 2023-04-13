@@ -12,11 +12,6 @@ export const NavMobile = () => {
 
   return (
     <>
-      {/* <button
-        type="button"
-        onClick={() => setVerNav(!verNav)}
-        className="fixed top-2 right-2 rounded-full bg-customPrimaryBlue w-auto h-auto flex sm:hidden items-center justify-center z-[999]"
-      > */}
       <AnimatePresence>
         {verNav ? (
           <motion.div

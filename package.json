@@ -1,5 +1,5 @@
 {
-  "homepage":"https://github.com/Goncervan/Portfolio-v2",
+  "homepage": "https://github.com/Goncervan/Portfolio-v2",
   "name": "portfolio2",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +14,7 @@
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.10.0",
+    "jspdf": "^2.5.1",
     "next": "13.2.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^8.3.0",

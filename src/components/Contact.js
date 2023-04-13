@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import { AiOutlineLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 import { GoMail } from "react-icons/go";
-import { GiPartyPopper } from "react-icons/gi";
-import { motion } from "framer-motion";
 import styles from "../../styles/Contact.module.css";
 import emailjs from "emailjs-com";
 import { ColorRing } from "react-loader-spinner";
