@@ -1,7 +1,7 @@
 import { AboutMe } from "../src/components/AboutMe/AboutMe";
 import { Projects } from "../src/components/Projects";
 import { NavWeb } from "../src/components/Navs/NavWeb";
-import { ExperienceAndEducation } from "../src/components/Experience/ExperienceAndEducation";
+import { ExperienceAndEducation } from "../src/components/ExperienceAndEducation/ExperienceAndEducation";
 import { Contact } from "../src/components/Contact";
 import { Presentation } from "../src/components/Presentation";
 import { NavMobile } from "../src/components/Navs/NavMobile";

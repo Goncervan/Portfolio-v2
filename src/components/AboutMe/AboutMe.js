@@ -29,15 +29,21 @@ export const AboutMe = () => {
             </li>
             <li>
               <p className="text-white text-base sm:text-xl">
-                Mis intereses incluyen unirme a un equipo emocionante de gente
-                apasionada, que me ayuden a crecer de manera profesional y
-                personal y participar de proyectos desafiantes e innovadores.
+                Estoy buscando unirme a un equipo emocionante de gente
+                apasionada, que pueda ayudarme a crecer tanto profesional como
+                personalmente, y participar en proyectos desafiantes e
+                innovadores.
               </p>
             </li>
             <li>
               <p className="text-white text-base sm:text-xl">
-                Aparte de programar me gusta hacer deporte, pasar el tiempo con
-                mi familia y amigos y los videojuegos.
+                Además de programar, disfruto de hacer deporte, pasar tiempo con
+                mi familia y amigos, y jugar videojuegos. Creo que es importante
+                tener un equilibrio entre el trabajo y la vida personal para
+                poder rendir al máximo en ambas áreas. Estoy entusiasmado por
+                encontrar una oportunidad en la que pueda aplicar mis
+                habilidades y pasión por la programación, mientras también me
+                permita disfrutar de mis intereses fuera del trabajo.
               </p>
             </li>
           </ul>
