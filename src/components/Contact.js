@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import { AiOutlineLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 import { GoMail } from "react-icons/go";
-import { GiPartyPopper } from "react-icons/gi";
-import { motion } from "framer-motion";
 import styles from "../../styles/Contact.module.css";
 import emailjs from "emailjs-com";
 import { ColorRing } from "react-loader-spinner";
@@ -41,14 +39,19 @@ export const Contact = () => {
       className="w-full bg-bgBlack seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
     >
       <div className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-start flex-col py-10 gap-5 sm:gap-10">
-        <div className="w-full text-center">
-          <h1 className="text-white text-3xl sm:text-2xl font-semibold mb-2">Contactame</h1>
+        <div className="w-full flex flex-col items-center justify-center">
+          <h1 className="w-fit text-3xl sm:text-[35px] text-white font-bold uppercase relative mb-5">
+            <span className="text-customBlue absolute -left-3 sm:-left-5">
+              .
+            </span>
+            Contacto
+          </h1>
           <h2 className="text-white text-xl mb-5">Creemos algo increible!</h2>
         </div>
         <ul className="w-full sm:w-1/2 flex flex-col gap-10">
           <li className="flex-1">
             <a
-              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-600 px-5 py-2"
+              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-400 px-5 py-2"
               target="_blank"
               href="https://www.linkedin.com/in/gonzalo-cervan/"
             >
@@ -58,7 +61,7 @@ export const Contact = () => {
           </li>
           <li className="flex-1">
             <a
-              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-600 px-5 py-2"
+              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-400 px-5 py-2"
               target="_blank"
               href="https://api.whatsapp.com/send/?phone=543516767860&text=Hola Gonzalo!&type=phone_number"
             >
@@ -68,7 +71,7 @@ export const Contact = () => {
           </li>
           <li className="flex-1">
             <a
-              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-600 px-5 py-2"
+              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-400 px-5 py-2"
               target="_blank"
               href="mailto:gonfedecer@gmail.com"
             >
@@ -139,7 +142,7 @@ export const Contact = () => {
             <input
               type="submit"
               value="Enviar"
-              className="w-3/4 sm:w-1/2 bg-customBlue text-white py-1 rounded-full cursor-pointer focus:outline-none focus:scale-110 transition-transform"
+              className="w-3/4 sm:w-1/2 bg-customBlue sm:text-base text-lg text-white py-1 rounded-full cursor-pointer focus:outline-none focus:scale-110 transition-transform"
             />
           )}
         </form>

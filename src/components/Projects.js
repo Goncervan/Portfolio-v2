@@ -5,7 +5,7 @@ export const Projects = () => {
   return (
     <div
       id="Projects"
-      className="w-full min-h-screen seccion bg-customGray flex flex-col items-center justify-start sm:pt-5 border-t sm:border-none border-white border-opacity-20"
+      className="w-full min-h-screen seccion bg-customGray flex flex-col items-center justify-start"
     >
       <h1 className="text-3xl inline sm:hidden text-white font-bold uppercase relative my-10 ">
         <span className="text-customBlue absolute -left-3 sm:-left-5">. </span>

@@ -48,7 +48,7 @@ export const NavWeb = () => {
   return (
     <nav
       id="menu"
-      className="w-full hidden sm:flex bg-[#fff] shadow-xl h-[10vh] sticky top-0 overflow-hidden sm:text-lg text-xs"
+      className="w-full hidden sm:flex bg-[#fff] shadow-xl h-[10vh] sticky top-0 overflow-hidden sm:text-lg text-xs z-[999]"
     >
       <a
         href="#Projects"
@@ -60,14 +60,14 @@ export const NavWeb = () => {
         href="#Experience"
         className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer"
       >
-        Experiencia
+        Experiencia y Educación
       </a>
-      <a
+      {/* <a
         href="#Education"
         className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer"
       >
         Educación
-      </a>
+      </a> */}
       <a 
         href="#Contact"
       className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer">
