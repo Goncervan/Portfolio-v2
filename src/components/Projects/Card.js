@@ -32,7 +32,7 @@ export const Card = ({ title, description, img, link, index }) => {
             href={link}
             target="_blank"
           >
-            {isInglish ? "Visit" : "Visitarrrr"}
+            {isInglish ? "Visit" : "Visitar"}
           </a>
         )}
       </div>
@@ -49,7 +49,7 @@ export const Card = ({ title, description, img, link, index }) => {
           href={link}
           target="_blank"
         >
-          {isInglish ? "Visit" : "Visitarrrr"}
+          {isInglish ? "Visit" : "Visitar"}
         </a>
       )}
     </div>
