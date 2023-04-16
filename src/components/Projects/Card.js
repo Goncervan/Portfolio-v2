@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 export const Card = ({ title, description, img, link, index }) => {
+  const [isInglish, setIsInglish] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && typeof navigator !== "undefined") {
+      if (navigator?.language.startsWith("en")) {
+        setIsInglish(true);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div
       className={`w-full border-y sm:border-b border-white flex ${
@@ -12,14 +23,18 @@ export const Card = ({ title, description, img, link, index }) => {
     >
       <div className="w-full md:w-2/5 flex flex-col items-center justify-center">
         <h3 className="text-2xl text-white flex-1">{title}</h3>
-        <p className="text-customBlue flex-1 text-center text-lg">{description}</p>
-        <a
-          className="mx-auto mt-10 bg-customBlue px-10 rounded-xl py-1 hidden sm:inline cursor-pointer text-white"
-          href={link}
-          target="_blank"
-        >
-          Visitar
-        </a>
+        <p className="text-customBlue flex-1 text-center text-lg">
+          {description}
+        </p>
+        {link !== undefined && (
+          <a
+            className="mx-auto mt-10 bg-customBlue px-10 rounded-xl py-1 hidden sm:inline cursor-pointer text-white"
+            href={link}
+            target="_blank"
+          >
+            {isInglish ? "Visit" : "Visitarrrr"}
+          </a>
+        )}
       </div>
       <div className="w-full md:w-2/5 flex flex-col items-start justify-start md:h-[275px]">
         {img !== undefined && (
@@ -28,13 +43,15 @@ export const Card = ({ title, description, img, link, index }) => {
           </div>
         )}
       </div>
-      <a
-        className="mx-auto bg-customBlue px-10 rounded-xl py-1 inline sm:hidden cursor-pointer text-white"
-        href={link}
-        target="_blank"
-      >
-        Visitar
-      </a>
+      {link !== undefined && (
+        <a
+          className="mx-auto bg-customBlue px-10 rounded-xl py-1 inline sm:hidden cursor-pointer text-white"
+          href={link}
+          target="_blank"
+        >
+          {isInglish ? "Visit" : "Visitarrrr"}
+        </a>
+      )}
     </div>
   );
 };
