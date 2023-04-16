@@ -52,7 +52,7 @@ export const DownloadPdf = () => {
         onClick={() => setModal(true)}
         className="self-center text-customBlue mt-10 font-semibold border-2 py-2 px-5 border-customBlue hover:scale-110 transition-transform"
       >
-        Descargar CV
+        Download Resume
       </button>
       <AnimatePresence>
         {modal ? (
@@ -79,7 +79,7 @@ export const DownloadPdf = () => {
                     <AiFillCloseCircle />
                   </button>
                   <h1 className="text-3xl italic font-semibold text-white">
-                    {loading ? ('Descargando...') : ('Descargar en...')}
+                    {loading ? ('Downloading...') : ('Download in...')}
                   </h1>
                   <div className="w-full flex items-center justify-center gap-5">
                     {loading ? (
@@ -104,13 +104,13 @@ export const DownloadPdf = () => {
                           onClick={() => handleDownloadEs()}
                           className="flex-1 border-2 border-white py-2 text-white"
                         >
-                          Español
+                          Spanish
                         </button>
                         <button
                           onClick={() => handleDownloadEn()}
                           className="flex-1 border-2 border-white py-2 text-white"
                         >
-                          Ingles
+                          English
                         </button>
                       </>
                     )}

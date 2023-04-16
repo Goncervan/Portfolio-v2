@@ -36,7 +36,7 @@ export const Contact = () => {
   return (
     <div
       id="Contact"
-      className="w-full bg-bgBlack seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
+      className="w-full bg-bgBlack h-[90vh] seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
     >
       <div className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-start flex-col py-10 gap-5 sm:gap-10">
         <div className="w-full flex flex-col items-center justify-center">

@@ -1,20 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import FotoPerfil from "../../public/Imagenes/Foto.jpg";
-import { useRouter } from "next/router";
-export const Presentation = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && typeof navigator !== "undefined") {
-      if (navigator?.language.startsWith("en")) {
-        router.push("En");
-      }
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[]);
-
+// import FotoPerfil from "../../public/Imagenes/Foto.jpg";
+export const EnglishPresentation = () => {
   return (
     <div
       id="Presentation"
@@ -48,7 +36,7 @@ export const Presentation = () => {
           href="#Contact"
           className="text-xl text-customBlue border-2 border-customBlue rounded-full px-4 py-1 focus:outline-none mx-auto sm:ml-28 mt-10"
         >
-          Contacto
+          Contact
         </a>
       </motion.div>
       <div className="w-1/2"></div>
