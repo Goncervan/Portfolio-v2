@@ -21,7 +21,7 @@ export const proyectos = [
   {
     title: "Weeki",
     description:
-      "Trabajé en la implementación de funcionalidades clave para el proyecto, tales como la búsqueda de departamentos y la reserva de alojamiento. Me encargué de la integración de la API cloudbeds para poder mostrar disponibilidad y tarifas en tiempo real. Desarrollé formularios controlados para garantizar la correcta recopilación de datos de los usuarios. Implementé métodos de pago para brindar una experiencia de usuario completa y segura. Trabajé de forma individual en la implementación de las funcionalidades, coordinando con el equipo para lograr una integración adecuada y una experiencia de usuario fluida.",
+      "Trabajé en la implementación de funcionalidades clave para el proyecto, tales como la búsqueda de departamentos y la reserva de alojamiento. Me encargué de la integración de la API cloudbeds para poder mostrar disponibilidad y tarifas en tiempo real. Desarrollé formularios controlados para garantizar la correcta recopilación de datos de los usuarios. Implementé métodos de pago para brindar una experiencia de usuario completa y segura. Trabajé de forma individual en la implementación de las funcionalidades, coordinando con el equipo para lograr una integración adecuada y una experiencia de usuario fluida. También trabajé en equipo en la maquetación tanto para la versión web como mobile, asegurándome de que ambas versiones fueran coherentes y estéticamente atractivas.",
     link: "https://www.weeki.rent/",
     img: BannerWeeki,
   },

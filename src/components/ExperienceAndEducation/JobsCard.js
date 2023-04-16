@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
 export const JobsCard = ({
   id,
@@ -8,6 +8,16 @@ export const JobsCard = ({
   final,
   puntosClave,
 }) => {
+  const [isInglish, setIsInglish] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && typeof navigator !== "undefined") {
+      if (navigator?.language.startsWith("en")) {
+        setIsInglish(true);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <li
       key={id}
@@ -24,7 +34,7 @@ export const JobsCard = ({
       </div>
       <div className="w-full flex flex-col gap-2 sm:px-5">
         <span className="text-xl underline underline-offset-2">
-          Responsabilidades:
+          {isInglish ? 'Responsibilities' : 'Responsabilidades:'}
         </span>
         <ul className="w-full flex flex-col items-start justify-center gap-2">
           {puntosClave.map((punto, i) => (
