@@ -1,11 +1,11 @@
 import React from "react";
-export const LinksMobile = ({ setVerNav }) => {
+export const EnglishLinksMobile = ({ setVerNav }) => {
   const links = [
-    { id: 0, href: "#Presentation", text: "Presentación" },
-    { id: 1, href: "#hero", text: "Acerca de mí" },
-    { id: 2, href: "#Projects", text: "Proyectos" },
-    { id: 3, href: "#Experience", text: "Experiencia y Educación" },
-    { id: 5, href: "#Contact", text: "Contacto" },
+    { id: 0, href: "#Presentation", text: "Presentation" },
+    { id: 1, href: "#hero", text: "About Me" },
+    { id: 2, href: "#Projects", text: "Projects" },
+    { id: 3, href: "#Experience", text: "Experience and Education" },
+    { id: 5, href: "#Contact", text: "Contact" },
   ];
   return (
     <ul className="w-full flex flex-col h-full items-center justify-center py-40 gap-4">

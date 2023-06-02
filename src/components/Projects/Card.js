@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 export const Card = ({ title, description, img, link, index }) => {
+  const [isInglish, setIsInglish] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && typeof navigator !== "undefined") {
+      if (navigator?.language.startsWith("en")) {
+        setIsInglish(true);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div
       className={`w-full border-y sm:border-b border-white flex ${
@@ -21,7 +32,7 @@ export const Card = ({ title, description, img, link, index }) => {
             href={link}
             target="_blank"
           >
-            Visitar
+            {isInglish ? "Visit" : "Visitar"}
           </a>
         )}
       </div>
@@ -32,13 +43,15 @@ export const Card = ({ title, description, img, link, index }) => {
           </div>
         )}
       </div>
-      <a
-        className="mx-auto bg-customBlue px-10 rounded-xl py-1 inline sm:hidden cursor-pointer text-white"
-        href={link}
-        target="_blank"
-      >
-        Visitar
-      </a>
+      {link !== undefined && (
+        <a
+          className="mx-auto bg-customBlue px-10 rounded-xl py-1 inline sm:hidden cursor-pointer text-white"
+          href={link}
+          target="_blank"
+        >
+          {isInglish ? "Visit" : "Visitar"}
+        </a>
+      )}
     </div>
   );
 };
