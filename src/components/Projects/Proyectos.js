@@ -15,7 +15,6 @@ export const proyectos = [
     title: "Cleaner",
     description:
       "Me encargué de la maquetación tanto para la versión web como mobile, asegurándome de que ambas versiones fueran coherentes y estéticamente atractivas. Trabajé en la implementación del sistema de reservas, asegurándome de que el usuario pudiera seleccionar fechas y horarios disponibles para su reserva. Desarrollé un carrito de compras que permitiera a los usuarios añadir productos y servicios, y pagarlos de manera segura. Implementé formularios controlados para garantizar la correcta recopilación de información de los usuarios. Añadí métodos de pago para brindar una experiencia de usuario completa y segura. Trabajé de forma individual, asegurándome de que estuvieran integradas de manera adecuada y brindaran una experiencia de usuario fluida.",
-    link: "https://especialistas.cleaner.com.co/",
     img: BannerCleaner,
   },
   {

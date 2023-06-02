@@ -12,14 +12,18 @@ export const Card = ({ title, description, img, link, index }) => {
     >
       <div className="w-full md:w-2/5 flex flex-col items-center justify-center">
         <h3 className="text-2xl text-white flex-1">{title}</h3>
-        <p className="text-customBlue flex-1 text-center text-lg">{description}</p>
-        <a
-          className="mx-auto mt-10 bg-customBlue px-10 rounded-xl py-1 hidden sm:inline cursor-pointer text-white"
-          href={link}
-          target="_blank"
-        >
-          Visitar
-        </a>
+        <p className="text-customBlue flex-1 text-center text-lg">
+          {description}
+        </p>
+        {link !== undefined && (
+          <a
+            className="mx-auto mt-10 bg-customBlue px-10 rounded-xl py-1 hidden sm:inline cursor-pointer text-white"
+            href={link}
+            target="_blank"
+          >
+            Visitar
+          </a>
+        )}
       </div>
       <div className="w-full md:w-2/5 flex flex-col items-start justify-start md:h-[275px]">
         {img !== undefined && (
