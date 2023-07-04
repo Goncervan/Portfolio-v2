@@ -1,10 +1,21 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { AiOutlineLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 import { GoMail } from "react-icons/go";
 import styles from "../../styles/Contact.module.css";
 import emailjs from "emailjs-com";
 import { ColorRing } from "react-loader-spinner";
 export const Contact = () => {
+  const [isInglish, setIsInglish] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && typeof navigator !== "undefined") {
+      if (navigator?.language.startsWith("en")) {
+        setIsInglish(true);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -20,7 +31,11 @@ export const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          setResult("Mensaje enviado! Gracias!");
+          if(isInglish){
+            setResult("Message sent! Thank you!")
+          } else {
+            setResult("Mensaje enviado! Gracias!");
+          }
         },
         (error) => {
           setLoading(false);
@@ -36,7 +51,7 @@ export const Contact = () => {
   return (
     <div
       id="Contact"
-      className="w-full bg-customGray seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
+      className="w-full bg-customGray h-fit seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
     >
       <div className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-start flex-col py-10 gap-5 sm:gap-10">
         <div className="w-full flex flex-col items-center justify-center">
@@ -44,9 +59,13 @@ export const Contact = () => {
             <span className="text-customBlue absolute -left-3 sm:-left-5">
               .
             </span>
-            Contacto
+            {isInglish ? "Contact" : "Contacto"}
           </h1>
-          <h2 className="text-white text-xl mb-5">Creemos algo increible!</h2>
+          <h2 className="text-white text-xl mb-5">
+            {isInglish
+              ? "Let's create something incredible!"
+              : "Creemos algo increible!"}
+          </h2>
         </div>
         <ul className="w-full sm:w-1/2 flex flex-col gap-10">
           <li className="flex-1">
@@ -97,7 +116,7 @@ export const Contact = () => {
             <span
               className={`${styles.spanName} absolute left-2 bottom-2 text-gray-400 group-focus:bottom-8 transition-all`}
             >
-              Nombre y Apellido
+              {isInglish ? "Full Name" : "Nombre y Apellido"}
             </span>
           </div>
           <div className="relative group w-full mt-2">
@@ -109,8 +128,8 @@ export const Contact = () => {
               />
             <span
               className={`${styles.spanEmail} absolute left-2 bottom-2 text-gray-400 group-focus:bottom-8 transition-all`}
-              >
-              Correo
+            >
+              {isInglish ? "Email" : "Correo"}
             </span>
           </div>
           <div className="relative group w-full mt-4">
@@ -123,7 +142,7 @@ export const Contact = () => {
             <span
               className={`${styles.spanMessage} absolute left-2 bottom-4 text-gray-400 group-focus:bottom-8 transition-all`}
             >
-              Mensaje
+              {isInglish ? "Message" : "Mensaje"}
             </span>
           </div>
           {loading ? (
@@ -141,8 +160,8 @@ export const Contact = () => {
           ) : (
             <input
               type="submit"
-              value="Enviar"
-              className="w-fit px-5 bg-customBlue sm:text-base text-lg text-white py-1 rounded-full cursor-pointer focus:outline-none focus:scale-110 transition-transform"
+              value={isInglish ? 'Send' : 'Enviar'}
+              className="w-3/4 sm:w-1/2 bg-customBlue sm:text-base text-lg text-white py-1 rounded-full cursor-pointer focus:outline-none focus:scale-110 transition-transform"
             />
           )}
         </form>

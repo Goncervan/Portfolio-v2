@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Gonzalo Cervan - Portfolio -</title>
+        <title>Gonzalo Cervan - Portafolio -</title>
       </Head>
       <div className="relative">
         <Presentation />

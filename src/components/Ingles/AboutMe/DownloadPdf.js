@@ -16,7 +16,7 @@ export const DownloadPdf = () => {
     setTimeout(() => {
       let doc = jsPDF("portrait", "px", "a4", false);
       doc.addImage(
-        "https://i.ibb.co/drsm5yJ/CV-Gonzalo-Cervan.jpg",
+        "https://i.ibb.co/cYcqKfQ/CV-Gonzalo-Cervan-EN.jpg",
         "JPG",
         0,
         0,
@@ -33,7 +33,7 @@ export const DownloadPdf = () => {
     setTimeout(() => {
       let doc = jsPDF("portrait", "px", "a4", false);
       doc.addImage(
-        "https://i.ibb.co/gFbh4sz/CV-Gonzalo-Cervan.jpg",
+        "https://i.ibb.co/WzVsqF3/CV-Gonzalo-Cervan-ES.jpg",
         "JPG",
         0,
         0,
@@ -52,7 +52,7 @@ export const DownloadPdf = () => {
         onClick={() => setModal(true)}
         className="self-center text-customBlue mt-10 font-semibold border-2 py-2 px-5 border-customBlue hover:scale-110 transition-transform"
       >
-        Descargar CV
+        Download Resume
       </button>
       <AnimatePresence>
         {modal ? (
@@ -68,6 +68,7 @@ export const DownloadPdf = () => {
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
+                  transition={{ type: "just", delay: 0.2 }}
                   exit={{ scale: 0 }}
                   className="w-1/4 h-fit px-5 py-10 bg-customBlue rounded-xl shadow-2xl flex items-center justify-center flex-col gap-5 relative"
                 >
@@ -78,7 +79,7 @@ export const DownloadPdf = () => {
                     <AiFillCloseCircle />
                   </button>
                   <h1 className="text-3xl italic font-semibold text-white">
-                    {loading ? ('Descargando...') : ('Descargar en...')}
+                    {loading ? ('Downloading...') : ('Download in...')}
                   </h1>
                   <div className="w-full flex items-center justify-center gap-5">
                     {loading ? (
@@ -103,13 +104,13 @@ export const DownloadPdf = () => {
                           onClick={() => handleDownloadEs()}
                           className="flex-1 border-2 border-white py-2 text-white"
                         >
-                          Español
+                          Spanish
                         </button>
                         <button
                           onClick={() => handleDownloadEn()}
                           className="flex-1 border-2 border-white py-2 text-white"
                         >
-                          Ingles
+                          English
                         </button>
                       </>
                     )}
