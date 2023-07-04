@@ -16,7 +16,7 @@ export const DownloadPdf = () => {
     setTimeout(() => {
       let doc = jsPDF("portrait", "px", "a4", false);
       doc.addImage(
-        "https://i.ibb.co/cYcqKfQ/CV-Gonzalo-Cervan-EN.jpg",
+        "https://i.ibb.co/drsm5yJ/CV-Gonzalo-Cervan.jpg",
         "JPG",
         0,
         0,
@@ -33,7 +33,7 @@ export const DownloadPdf = () => {
     setTimeout(() => {
       let doc = jsPDF("portrait", "px", "a4", false);
       doc.addImage(
-        "https://i.ibb.co/WzVsqF3/CV-Gonzalo-Cervan-ES.jpg",
+        "https://i.ibb.co/gFbh4sz/CV-Gonzalo-Cervan.jpg",
         "JPG",
         0,
         0,

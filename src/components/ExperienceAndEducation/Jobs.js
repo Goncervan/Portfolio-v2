@@ -2,7 +2,7 @@ export const trabajos = [
   {
     id: 1,
     inicio: "03/2022",
-    final: "Actualidad",
+    final: "06/2023",
     nombre: "NOA EXPERIENCE",
     posicion: "JR FrontEnd Developer",
     puntosClave: [
