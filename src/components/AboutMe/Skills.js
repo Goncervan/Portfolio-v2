@@ -21,7 +21,7 @@ export const Skills = () => {
     { text: "Typescript", icon: SiTypescript, id: 5 },
     { text: "Tailwind", icon: SiTailwindcss, id: 6 },
     { text: "Next Js", icon: SiNextdotjs, id: 7 },
-    { text: "Framer", icon: SiFramer, id: 8 },
+    { text: "Framer Motion", icon: SiFramer, id: 8 },
     { text: "Gitlab", icon: SiGitlab, id: 9 },
   ];
   return (

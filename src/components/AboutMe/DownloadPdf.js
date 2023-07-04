@@ -16,7 +16,7 @@ export const DownloadPdf = () => {
     setTimeout(() => {
       let doc = jsPDF("portrait", "px", "a4", false);
       doc.addImage(
-        "https://i.ibb.co/cYcqKfQ/CV-Gonzalo-Cervan-EN.jpg",
+        "https://i.ibb.co/drsm5yJ/CV-Gonzalo-Cervan.jpg",
         "JPG",
         0,
         0,
@@ -33,7 +33,7 @@ export const DownloadPdf = () => {
     setTimeout(() => {
       let doc = jsPDF("portrait", "px", "a4", false);
       doc.addImage(
-        "https://i.ibb.co/WzVsqF3/CV-Gonzalo-Cervan-ES.jpg",
+        "https://i.ibb.co/gFbh4sz/CV-Gonzalo-Cervan.jpg",
         "JPG",
         0,
         0,
@@ -68,7 +68,6 @@ export const DownloadPdf = () => {
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  transition={{ type: "just", delay: 0.2 }}
                   exit={{ scale: 0 }}
                   className="w-1/4 h-fit px-5 py-10 bg-customBlue rounded-xl shadow-2xl flex items-center justify-center flex-col gap-5 relative"
                 >

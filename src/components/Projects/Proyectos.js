@@ -2,6 +2,10 @@ import BannerPqrs from "../../../public/Proyectos/Pqrs.png";
 import BannerCleaner from "../../../public/Proyectos/Cleaner.png";
 import BannerWeeki from "../../../public/Proyectos/Weeki.png";
 import BannerIunctus from "../../../public/Proyectos/Iunctus.png";
+import BannerElecta from "../../../public/Proyectos/Electa.png";
+import BannerFormArea2 from "../../../public/Proyectos/FormArea2.png";
+import BannerAsistenciaArea2 from "../../../public/Proyectos/Asistencia.png";
+import BannerVoceros from "../../../public/Proyectos/Voceros.png";
 
 export const proyectos = [
   {
@@ -20,7 +24,7 @@ export const proyectos = [
   {
     title: "Weeki",
     description:
-      "Trabajé en la implementación de funcionalidades clave para el proyecto, tales como la búsqueda de departamentos y la reserva de alojamiento. Me encargué de la integración de la API cloudbeds para poder mostrar disponibilidad y tarifas en tiempo real. Desarrollé formularios controlados para garantizar la correcta recopilación de datos de los usuarios. Implementé métodos de pago para brindar una experiencia de usuario completa y segura. Trabajé de forma individual en la implementación de las funcionalidades, coordinando con el equipo para lograr una integración adecuada y una experiencia de usuario fluida. También trabajé en equipo en la maquetación tanto para la versión web como mobile, asegurándome de que ambas versiones fueran coherentes y estéticamente atractivas.",
+      "Trabajé en la implementación de características clave para el proyecto, como la búsqueda de apartamentos y la reserva de alojamiento. Me encargué de la integración de la API de Cloudbeds para mostrar disponibilidad y tarifas en tiempo real. Desarrollé formularios controlados para garantizar la correcta recopilación de datos de los usuarios. Implementé métodos de pago para brindar una experiencia de usuario completa y segura, incluyendo registro e inicio de sesión para la creación automática de usuarios y reservas basadas en la información proporcionada por el usuario. Trabajé de forma individual en la implementación de estas características, coordinando con el equipo para lograr una integración adecuada y una experiencia de usuario fluida. También colaboré en equipo en la maquetación tanto para la versión web como móvil, asegurando consistencia y atractivo estético.",
     link: "https://www.weeki.rent/",
     img: BannerWeeki,
   },
@@ -32,10 +36,32 @@ export const proyectos = [
     img: BannerIunctus,
   },
   {
+    title: "Formularios Area Cuadrada",
+    description:
+      "Me encargué de la maquetación de un nuevo formulario y la implementación de su funcionalidad. (este formulario se encuentra replicado en varias páginas)",
+    link: "https://urban72.co/",
+    img: BannerFormArea2,
+  },
+  {
+    title: "Formularios de asistencia Area Cuadrada",
+    description:
+      "Me encargué de la maquetación de una plantilla para un nuevo formulario y la implementación de su funcionalidad. (este formulario se encuentra replicado en varias páginas)",
+    link: "https://asistencia.vallartaenchia.co/",
+    img: BannerAsistenciaArea2,
+  },
+  {
     title: "Electa",
     description:
       "Desarrollo de una red social para que candidatos políticos puedan crear su red de seguidores, trabajando en equipo con otros desarrolladores. Me encargué de la maquetación web y la implementación de funcionalidades del backend. Desarrollé el sistema de creación de usuarios y registro mediante diferentes opciones de autenticación. Contribuí en la implementación de un chat en tiempo real, encuestas y gráficos para enriquecer la experiencia de usuario en la red social.",
     link: undefined,
-    img: undefined,
+    img: BannerElecta,
   },
+  {
+    title: "Voceros",
+    description:
+      "Maquetación web y mobile de una plataforma para que voceros de candidatos, formulario de registro e inicio de sesión controlado con marcado de errores, drag and drop nativo para la subida de archivos",
+    link: undefined,
+    img: BannerVoceros,
+  },
+
 ];

@@ -51,7 +51,7 @@ export const Contact = () => {
   return (
     <div
       id="Contact"
-      className="w-full bg-bgBlack h-[90vh] seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
+      className="w-full bg-customGray h-fit seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
     >
       <div className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-start flex-col py-10 gap-5 sm:gap-10">
         <div className="w-full flex flex-col items-center justify-center">
@@ -74,8 +74,8 @@ export const Contact = () => {
               target="_blank"
               href="https://www.linkedin.com/in/gonzalo-cervan/"
             >
-              <AiOutlineLinkedin className="text-[30px] text-white" />
-              <span className="text-white">LinkedIn</span>
+              <AiOutlineLinkedin className="text-[30px] text-white flex-1" />
+              <span className="text-white flex-1">LinkedIn</span>
             </a>
           </li>
           <li className="flex-1">
@@ -84,18 +84,18 @@ export const Contact = () => {
               target="_blank"
               href="https://api.whatsapp.com/send/?phone=543516767860&text=Hola Gonzalo!&type=phone_number"
             >
-              <AiOutlineWhatsApp className="text-3xl text-white" />
-              <span className="text-white">WhatsApp</span>
+              <AiOutlineWhatsApp className="text-3xl text-white flex-1" />
+              <span className="text-white flex-1">WhatsApp</span>
             </a>
           </li>
           <li className="flex-1">
             <a
-              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-400 px-5 py-2"
+              className="cursor-pointer flex items-center justify-center gap-4 px-5 py-2"
               target="_blank"
               href="mailto:gonfedecer@gmail.com"
             >
-              <GoMail className="text-3xl text-white" />
-              <span className="text-white">Correo</span>
+              <GoMail className="text-3xl text-white flex-1" />
+              <span className="text-white flex-1">Correo</span>
             </a>
           </li>
         </ul>
@@ -111,7 +111,7 @@ export const Contact = () => {
               type="text"
               required
               name="name"
-              className={`${styles.inputName} w-full px-4 py-2 border rounded-md text-white bg-transparent border-gray-400 focus:border-white valid:border-white focus:outline-none`}
+              className={`${styles.inputName} w-full px-4 py-2 border-b text-white bg-transparent border-gray-400 focus:border-white valid:border-white focus:outline-none`}
             />
             <span
               className={`${styles.spanName} absolute left-2 bottom-2 text-gray-400 group-focus:bottom-8 transition-all`}
@@ -124,8 +124,8 @@ export const Contact = () => {
               type="text"
               required
               name="email"
-              className={`${styles.inputEmail} w-full px-4 py-2 border rounded-md text-white bg-transparent border-gray-400 focus:border-white valid:border-white focus:outline-none`}
-            />
+              className={`${styles.inputEmail} w-full px-4 py-2 border-b text-white bg-transparent border-gray-400 focus:border-white valid:border-white focus:outline-none`}
+              />
             <span
               className={`${styles.spanEmail} absolute left-2 bottom-2 text-gray-400 group-focus:bottom-8 transition-all`}
             >
@@ -137,10 +137,10 @@ export const Contact = () => {
               type="text"
               required
               name="message"
-              className={`${styles.inputMessage} w-full h-40 px-4 py-2 border rounded-md text-white bg-transparent border-gray-400 focus:border-white valid:border-white focus:outline-none resize-none`}
+              className={`${styles.inputMessage} w-full px-4 h-8 border-b text-white bg-transparent border-gray-400 focus:border-white valid:border-white focus:outline-none resize-none`}
             />
             <span
-              className={`${styles.spanMessage} absolute left-2 top-2 text-gray-400 group-focus:bottom-8 transition-all`}
+              className={`${styles.spanMessage} absolute left-2 bottom-4 text-gray-400 group-focus:bottom-8 transition-all`}
             >
               {isInglish ? "Message" : "Mensaje"}
             </span>
