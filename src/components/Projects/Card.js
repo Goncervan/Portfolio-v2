@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-export const Card = ({ title, description, img, link, index }) => {
+import { Accordion } from "./Accordion";
+export const Card = ({ title, description, img, link, index, tecnologias }) => {
   const [isInglish, setIsInglish] = useState(false);
   const router = useRouter();
   useEffect(() => {
@@ -19,47 +20,25 @@ export const Card = ({ title, description, img, link, index }) => {
         setIsInglish(true);
       }
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.isReady]);
+
+  const [expanded, setExpanded] = useState(0);
+
   return (
-    <div
-      className={`w-full border-y sm:border-b border-white flex ${
-        index % 2 === 0
-          ? "flex-col md:flex-row"
-          : "flex-col md:flex-row-reverse"
-      } justify-between sm:gap-10 gap-5 border-opacity-20 px-5 lg:px-40 py-12 flex-1`}
-    >
-      <div className="flex-1 w-full md:w-2/5 flex flex-col items-center justify-center">
-        <h3 className="text-2xl text-white">{title}</h3>
-        <p className="text-customBlue my-auto text-center text-lg">
-          {description}
-        </p>
-        {link !== undefined && (
-          <a
-            className="mx-auto mt-10 bg-customBlue px-10 rounded-xl py-1 hidden sm:inline cursor-pointer text-white"
-            href={link}
-            target="_blank"
-          >
-            {isInglish ? "Visit" : "Visitar"}
-          </a>
-        )}
-      </div>
+    <div className="w-full bg-customGray flex flex-col justify-between sm:gap-10 gap-5 px-5 lg:px-40 py-12 flex-1 relative">
       <div className="flex-1 flex flex-col items-start justify-start">
+        <h3 className="text-xl md:text-[2.5rem] mb-4 text-white">{title}.</h3>
         {img !== undefined && (
-          <div className="border-2 rounded-xl bg-customBlue border-customBlue">
+          <div className="rounded-xl bg-customBlue relative">
             <Image src={img} alt={title} className="rounded-xl" />
           </div>
         )}
+        <div className="bg-customGray rounded-xl w-full h-full flex flex-col items-center justify-center mt-10">
+          <Accordion id={1} list={description} title={isInglish ? 'Responsabilites:' : 'Responsabilidades:'} setExpanded={setExpanded} expanded={expanded}/>
+          <Accordion id={2} list={tecnologias} title={isInglish ? 'Technologies:' : 'Tecnologías:'} setExpanded={setExpanded} expanded={expanded}/>
+        </div>
       </div>
-      {link !== undefined && (
-        <a
-          className="mx-auto bg-customBlue px-10 rounded-xl py-1 inline sm:hidden cursor-pointer text-white"
-          href={link}
-          target="_blank"
-        >
-          {isInglish ? "Visit" : "Visitar"}
-        </a>
-      )}
     </div>
   );
 };

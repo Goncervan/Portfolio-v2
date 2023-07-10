@@ -14,8 +14,6 @@ import { AnimatePresence, motion } from "framer-motion";
 export const Skills = () => {
   const [show, setShow] = useState("");
   const tecnologias = [
-    { text: "HTML", icon: SiHtml5, id: 1 },
-    { text: "CSS", icon: SiCss3, id: 2 },
     { text: "React Js", icon: SiReact, id: 3 },
     { text: "Javascript", icon: SiJavascript, id: 4 },
     { text: "Typescript", icon: SiTypescript, id: 5 },

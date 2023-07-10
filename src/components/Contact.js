@@ -4,9 +4,11 @@ import { GoMail } from "react-icons/go";
 import styles from "../../styles/Contact.module.css";
 import emailjs from "emailjs-com";
 import { ColorRing } from "react-loader-spinner";
+import { useRouter } from "next/router";
+import stylesHome from "../../styles/Home.module.css"
 export const Contact = () => {
   const [isInglish, setIsInglish] = useState(false);
-
+  const router = useRouter();
   useEffect(() => {
     if (typeof window !== "undefined" && typeof navigator !== "undefined") {
       if (navigator?.language.startsWith("en")) {
@@ -15,6 +17,13 @@ export const Contact = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (router.isReady) {
+      setIsInglish(router.pathname === "/En");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [router.isReady]);
 
   const form = useRef();
 
@@ -31,8 +40,8 @@ export const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          if(isInglish){
-            setResult("Message sent! Thank you!")
+          if (isInglish) {
+            setResult("Message sent! Thank you!");
           } else {
             setResult("Mensaje enviado! Gracias!");
           }
@@ -53,24 +62,24 @@ export const Contact = () => {
       id="Contact"
       className="w-full bg-customGray h-fit seccion flex flex-col sm:flex-row items-end justify-evenly p-10 sm:p-20"
     >
-      <div className="w-full sm:w-1/3 h-auto sm:h-[450px] flex items-center justify-start flex-col py-10 gap-5 sm:gap-10">
-        <div className="w-full flex flex-col items-center justify-center">
-          <h1 className="w-fit text-3xl sm:text-[35px] text-white font-bold uppercase relative mb-5">
-            <span className="text-customBlue absolute -left-3 sm:-left-5">
-              .
-            </span>
+      <div className="w-full sm:w-fit h-auto sm:h-[450px] flex items-center justify-start flex-col py-10 gap-5 sm:gap-10">
+        <div className="w-fit flex flex-col items-center justify-center">
+        <div className="w-full flex items-center justify-center gap-x-2 mb-4 sm:mb-10 relative">
+            <div className="w-4 h-4 bg-customBlue rounded-full" />
+            <h1 className={`text-3xl h-fit sm:text-[4rem] text-customBlue font-bold uppercase ${stylesHome.front}`}>
             {isInglish ? "Contact" : "Contacto"}
-          </h1>
+            </h1>
+          </div>
           <h2 className="text-white text-xl mb-5">
             {isInglish
               ? "Let's create something incredible!"
               : "Creemos algo increible!"}
           </h2>
         </div>
-        <ul className="w-full sm:w-1/2 flex flex-col gap-10">
+        <ul className="w-full sm:w-full flex flex-col">
           <li className="flex-1">
             <a
-              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-400 px-5 py-2"
+              className="cursor-pointer flex items-center justify-center gap-4 px-5 py-2"
               target="_blank"
               href="https://www.linkedin.com/in/gonzalo-cervan/"
             >
@@ -78,9 +87,10 @@ export const Contact = () => {
               <span className="text-white flex-1">LinkedIn</span>
             </a>
           </li>
+          <li className="w-full border-b border-gray-400 my-4"></li>
           <li className="flex-1">
             <a
-              className="cursor-pointer flex items-center justify-center gap-4 border-b border-gray-400 px-5 py-2"
+              className="cursor-pointer flex items-center justify-center gap-4px-5 py-2"
               target="_blank"
               href="https://api.whatsapp.com/send/?phone=543516767860&text=Hola Gonzalo!&type=phone_number"
             >
@@ -88,6 +98,7 @@ export const Contact = () => {
               <span className="text-white flex-1">WhatsApp</span>
             </a>
           </li>
+          <li className="w-full border-b border-gra-400 my-4"></li>
           <li className="flex-1">
             <a
               className="cursor-pointer flex items-center justify-center gap-4 px-5 py-2"
@@ -125,7 +136,7 @@ export const Contact = () => {
               required
               name="email"
               className={`${styles.inputEmail} w-full px-4 py-2 border-b text-white bg-transparent border-gray-400 focus:border-white valid:border-white focus:outline-none`}
-              />
+            />
             <span
               className={`${styles.spanEmail} absolute left-2 bottom-2 text-gray-400 group-focus:bottom-8 transition-all`}
             >
@@ -160,7 +171,7 @@ export const Contact = () => {
           ) : (
             <input
               type="submit"
-              value={isInglish ? 'Send' : 'Enviar'}
+              value={isInglish ? "Send" : "Enviar"}
               className="w-3/4 sm:w-1/2 bg-customBlue sm:text-base text-lg text-white py-1 rounded-full cursor-pointer focus:outline-none focus:scale-110 transition-transform"
             />
           )}

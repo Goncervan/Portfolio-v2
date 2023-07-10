@@ -50,7 +50,7 @@ export const DownloadPdf = () => {
     <>
       <button
         onClick={() => setModal(true)}
-        className="self-center text-customBlue mt-10 font-semibold border-2 py-2 px-5 border-customBlue hover:scale-110 transition-transform"
+        className="self-center bg-customBlue mt-10 text-xl text-white rounded-full py-2 px-10 hover:scale-110 transition-transform"
       >
         Descargar CV
       </button>

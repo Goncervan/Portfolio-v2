@@ -62,12 +62,6 @@ export const NavWeb = () => {
       >
         Experiencia y Educación
       </a>
-      {/* <a
-        href="#Education"
-        className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer"
-      >
-        Educación
-      </a> */}
       <a 
         href="#Contact"
       className="flex-1 flex items-center justify-center text-center uppercase text-[#000] transition-all font-semibold hover:bg-[#f0f0f0] cursor-pointer">

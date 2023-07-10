@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
 export const JobsCard = ({
@@ -9,7 +10,7 @@ export const JobsCard = ({
   puntosClave,
 }) => {
   const [isInglish, setIsInglish] = useState(false);
-
+  const router = useRouter();
   useEffect(() => {
     if (typeof window !== "undefined" && typeof navigator !== "undefined") {
       if (navigator?.language.startsWith("en")) {
@@ -18,6 +19,13 @@ export const JobsCard = ({
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(()=>{
+    if(router.isReady){
+      setIsInglish(router.pathname === '/En')
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[router.isReady])
   return (
     <li
       key={id}
@@ -26,7 +34,7 @@ export const JobsCard = ({
       <h4 className="w-full py-5 text-2xl font-semibold flex items-center justify-center border-b border-customBlue ">
         {posicion}
       </h4>
-      <div className="w-full flex sm:flex-row flex-col items-start sm:items-end gap-5 px-5">
+      <div className="w-full flex sm:flex-row flex-col items-center gap-5 px-5">
         <h2 className="text-2xl italic">{nombre}</h2>
         <h3 className="text-base font-semibold text-customBlue">
           {inicio} - {final}
