@@ -1,0 +1,21 @@
+.image {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .behind {
+    width: 0px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+    z-index: 1;
+    display: inline;
+  }
+  
+  .image:hover + .behind {
+    width: 200px;
+    height: 200px;
+  }
+  
+  

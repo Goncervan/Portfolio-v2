@@ -3,7 +3,7 @@ export const cursos = [
       id: 1,
       posicion: "FullStack Developer",
       institucion: "Henry Bootcamp",
-      fechas: "July 2021 - October 2021",
+      fechas: "07/2021 - 10/2021",
       puntos: [
         "I attended an intensive +800-hour coding Bootcamp.",
         "I learned about technologies such as React, Redux, Express, Node.Js, Sequelize, and other cutting-edge tools.",
@@ -16,7 +16,7 @@ export const cursos = [
       id: 2,
       posicion: "FullStack Developer",
       institucion: "Argentine Institute of Computing",
-      fechas: "January 2021 - April 2021",
+      fechas: "01/2021 - 04/2021",
       puntos: [
         "Introduction to Programming Course.",
         "Learned about technologies such as HTML, CSS, JavaScript, PHP, MySQL, and other fundamental tools in web programming.",

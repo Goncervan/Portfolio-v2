@@ -14,8 +14,6 @@ import { AnimatePresence, motion } from "framer-motion";
 export const Skills = () => {
   const [show, setShow] = useState("");
   const tecnologias = [
-    { text: "HTML", icon: SiHtml5, id: 1 },
-    { text: "CSS", icon: SiCss3, id: 2 },
     { text: "React Js", icon: SiReact, id: 3 },
     { text: "Javascript", icon: SiJavascript, id: 4 },
     { text: "Typescript", icon: SiTypescript, id: 5 },
@@ -37,7 +35,7 @@ export const Skills = () => {
             onHoverEnd={() => setShow("")}
             className="flex-1 hidden sm:flex flex-col items-center justify-center relative"
           >
-            <el.icon className="text-[50px] text-white flex-1 relative transition-all cursor-pointer" />
+            <el.icon className="text-[50px] text-white flex-1 relative transition-all" />
             <AnimatePresence>
               {show === el.text ? (
                 <motion.p
@@ -52,7 +50,7 @@ export const Skills = () => {
               ) : null}
             </AnimatePresence>
           </motion.div>
-          <el.icon className="text-[50px] text-white inline sm:hidden relative transition-all cursor-pointer" />
+          <el.icon className="text-[50px] text-white inline sm:hidden relative transition-all"/>
         </>
       ))}
     </div>

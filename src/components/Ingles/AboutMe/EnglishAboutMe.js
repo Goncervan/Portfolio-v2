@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Skills } from "./Skills";
 import { DownloadPdf } from "./DownloadPdf";
+import styles from "../../../../styles/Home.module.css";
 export const EnglishAboutMe = () => {
   return (
     <div
@@ -16,12 +17,14 @@ export const EnglishAboutMe = () => {
         className="w-full sm:w-4/5 flex flex-col sm:flex-row items-start justify-between gap-10"
       >
         <section className="w-full sm:w-2/5 flex flex-col items-center justify-center sm:items-start sm:justify-start">
-          <h1 className="text-3xl sm:text-[35px] text-white font-bold uppercase mb-4 sm:mb-10 relative">
-            <span className="text-customBlue absolute -left-3 sm:-left-5">
-              .{" "}
-            </span>
-            About Me
-          </h1>
+          <div className="w-full flex items-center justify-center gap-x-2 mb-4 sm:mb-10 relative">
+            <div className="w-4 h-4 bg-customBlue rounded-full" />
+            <h1
+              className={`text-3xl h-fit sm:text-[4rem] text-customBlue font-bold uppercase ${styles.front}`}
+            >
+              About me
+            </h1>
+          </div>
           <ul className="flex flex-col gap-4 w-full">
             <li>
               <p className="text-white text-base sm:text-xl">
@@ -38,28 +41,28 @@ export const EnglishAboutMe = () => {
             </li>
             <li>
               <p className="text-white text-base sm:text-xl">
-                In addition to programming, I enjoy doing sports, spending time
-                with my family and friends, and playing video games. I believe
-                it is important to have a balance between work and personal life
-                in order to perform at my best in both areas. I am excited to
-                find an opportunity where I can apply my skills and passion for
-                programming, while also allowing me to enjoy my interests
-                outside of work.
+                I am excited to find an opportunity where I can apply my skills
+                and passion for programming.
               </p>
             </li>
           </ul>
-          <DownloadPdf/>
+          <DownloadPdf />
         </section>
         <section className="w-full sm:w-2/5 h-full flex flex-col items-center justify-start">
-          <h1 className="text-3xl sm:text-[35px] text-white font-bold uppercase relative mb-10">
-            <span className="text-customBlue absolute -left-3 sm:-left-5">
-              .{" "}
-            </span>
-            Skills
-          </h1>
+          <div className="w-full flex items-center justify-center gap-x-2 mb-4 sm:mb-10 relative">
+            <div className="w-4 h-4 bg-customBlue rounded-full" />
+            <h1
+              className={`text-3xl h-fit sm:text-[4rem] text-customBlue font-bold uppercase ${styles.front}`}
+            >
+              Skills
+            </h1>
+          </div>
           <ul className="w-full flex flex-wrap items-start justify-center gap-5 sm:px-4">
             <li className="text-white text-base sm:text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
               Native Spanish
+            </li>
+            <li className="text-white text-base sm:text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              Autonomous
             </li>
             <li className="text-white text-base sm:text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
               Teamwork
@@ -69,6 +72,9 @@ export const EnglishAboutMe = () => {
             </li>
             <li className="text-white text-base sm:text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
               Curiosity
+            </li>
+            <li className="text-white text-base sm:text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
+              SCRUM
             </li>
             <li className="text-white text-base sm:text-xl border border-white rounded-full px-4 py-1 cursor-default hover:bg-white hover:text-black transition-all">
               Attention to detail
@@ -85,10 +91,14 @@ export const EnglishAboutMe = () => {
           </ul>
         </section>
       </motion.div>
-      <h1 className="text-3xl sm:text-[35px] text-white font-bold uppercase relative mt-20">
-        <span className="text-customBlue absolute -left-3 sm:-left-5">. </span>
-        Technologies
-      </h1>
+      <div className="w-full flex items-center justify-center mt-20 gap-x-2 relative">
+        <div className="w-4 h-4 bg-customBlue rounded-full" />
+        <h1
+          className={`text-3xl h-fit sm:text-[4rem] text-customBlue font-bold uppercase ${styles.front}`}
+        >
+          Technologies
+        </h1>
+      </div>
       <Skills />
     </div>
   );
