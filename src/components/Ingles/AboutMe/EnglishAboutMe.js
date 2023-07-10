@@ -7,7 +7,7 @@ export const EnglishAboutMe = () => {
   return (
     <div
       id="hero"
-      className="w-full min-h-[90vh] bg-customGray flex flex-col items-center justify-center overflow-hidden sm:pb-10 px-10 sm:px-0"
+      className="w-full h-auto min-h-[90vh] bg-customGray pt-10 flex flex-col items-center justify-center overflow-hidden sm:pb-10 px-10 sm:px-0"
     >
       <motion.div
         initial={{ y: 500, opacity: 0 }}
@@ -20,7 +20,7 @@ export const EnglishAboutMe = () => {
           <div className="w-full flex items-center justify-center gap-x-2 mb-4 sm:mb-10 relative">
             <div className="w-4 h-4 bg-customBlue rounded-full" />
             <h1
-              className={`text-3xl h-fit sm:text-[4rem] text-customBlue font-bold uppercase ${styles.front}`}
+              className={`text-3xl h-auto sm:text-[4rem] text-customBlue font-bold uppercase ${styles.front}`}
             >
               About me
             </h1>

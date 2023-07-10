@@ -11,7 +11,7 @@ export const Projects = () => {
   return (
     <div
       id="Projects"
-      className="w-full h-auto md:h-screen seccion bg-customGray flex flex-col items-center justify-start pt-20"
+      className="w-full h-auto seccion bg-customGray flex flex-col items-center justify-start pt-20"
     >
       <h1 className="text-3xl inline sm:hidden text-white font-bold uppercase relative my-10 ">
         <span className="text-customBlue absolute -left-3 sm:-left-5">. </span>
@@ -25,6 +25,7 @@ export const Projects = () => {
           mousewheel={true}
           className="w-full md:w-3/4 h-fit"
           autoplay
+          centeredSlides
           spaceBetween={500}
           navigation
           effect={"creative"}

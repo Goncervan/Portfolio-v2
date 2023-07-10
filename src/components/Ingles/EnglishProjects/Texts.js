@@ -3,63 +3,252 @@ import BannerCleaner from "../../../../public/Proyectos/Cleaner.png";
 import BannerWeeki from "../../../../public/Proyectos/Weeki.png";
 import BannerIunctus from "../../../../public/Proyectos/Iunctus.png";
 import BannerElecta from "../../../../public/Proyectos/Electa.png";
+import BannerElectaAdmin from "../../../../public/Proyectos/Electa-admin.png";
 import BannerFormArea2 from "../../../../public/Proyectos/FormArea2.png";
 import BannerAsistenciaArea2 from "../../../../public/Proyectos/Asistencia.png";
 import BannerVoceros from "../../../../public/Proyectos/Voceros.png";
+import {
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiFramer,
+  SiGitlab,
+  SiSocketdotio,
+  SiTypescript,
+} from "react-icons/si";
+
 export const proyectos = [
   {
     title: "Area Cuadrada PQRS",
-    description:
-      "I was in charge of the layout for both the web and mobile versions, ensuring that both versions were consistent and aesthetically appealing. I worked on developing multi-step forms to facilitate the information entry process for the user. I implemented branching in the forms to adapt to different situations and gather specific information. I worked individually, ensuring proper integration and providing a seamless user experience.",
+    description: [
+      { name: "Development of frontend individually.", icon: null },
+      { name: "Web and mobile layout.", icon: null },
+      { name: "Development of multi-step forms.", icon: null },
+      {
+        name: "Implemented branching in forms to adapt to different situations and collect specific information.",
+        icon: null,
+      },
+    ],
     link: "https://pqrs.urban72.co/",
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+    ],
     img: BannerPqrs,
   },
   {
     title: "Cleaner",
-    description:
-      "I was responsible for the layout for both the web and mobile versions, ensuring that both versions were consistent and aesthetically appealing. I worked on implementing the reservation system, ensuring that the user could select available dates and time slots for their reservation. I developed a shopping cart that allowed users to add products and services and securely make payments. I implemented controlled forms to ensure proper collection of user information. I added payment methods to provide a complete and secure user experience. I worked individually, ensuring proper integration and providing a seamless user experience.",
+    description: [
+      { name: "Development of frontend individually.", icon: null },
+      { name: "Web and mobile layout.", icon: null },
+      {
+        name: "Implementation of a booking system based on available dates and times.",
+        icon: null,
+      },
+      {
+        name: "Shopping cart to allow users to add products and services.",
+        icon: null,
+      },
+      {
+        name: "Controlled forms to ensure proper collection of user information.",
+        icon: null,
+      },
+      ,
+      {
+        name: "Added payment methods to provide a complete and secure user experience.",
+        icon: null,
+      },
+    ],
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+      { name: "Wompi", icon: null },
+    ],
     img: BannerCleaner,
   },
   {
     title: "Weeki",
-    description:
-      "I worked on implementing crucial features for the project, including apartment search and accommodation booking. I successfully integrated the Cloudbeds API to showcase real-time availability and rates. To ensure accurate data collection, I developed controlled forms. In order to offer a comprehensive and secure user experience, I incorporated various payment methods, along with user registration and login functionalities for seamless creation and automatic reservations based on user-provided information. While working independently on implementing these features, I collaborated with the team to ensure smooth integration and a cohesive user experience. Additionally, I actively contributed to the layout design for both web and mobile versions, guaranteeing consistency and aesthetic appeal.",
+    description: [
+      {
+        name: "Development of functionalities individually.",
+        icon: null,
+      },
+      {
+        name: "Implementation of search and booking system for apartments.",
+        icon: null,
+      },
+      {
+        name: "Integration of Cloudbeds API to display availability and rates.",
+        icon: null,
+      },
+      {
+        name: "Development of controlled forms to collect user data.",
+        icon: null,
+      },
+      {
+        name: "Implementation of payment methods to provide a secure experience",
+        icon: null,
+      },
+      {
+        name: "Registration and login for user creation and automatic reservations based on user information.",
+        icon: null,
+      },
+      {
+        name: "Collaborated as a team in the layout for web and mobile versions.",
+        icon: null,
+      },
+    ],
     link: "https://www.weeki.rent/",
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+      { name: "Wompi", icon: null },
+    ],
     img: BannerWeeki,
   },
   {
     title: "Iunctus",
-    description:
-      "I was responsible for web layout and backend functionality implementation. I participated in implementing the admin user to create and edit bills, legislative agendas, and congress members' profiles. I developed the functionality for user creation, allowing them to search and track the elements created by the admin. I worked collaboratively to coordinate the integration of different features and achieve a consistent and satisfactory user experience.",
+    description: [
+      { name: "Web layout.", icon: null },
+      { name: "Implementation of backend functionalities.", icon: null },
+      {
+        name: "Admin user functionalities to create, edit, and delete bills, legislative agendas, congressman profiles, and app users.",
+        icon: null,
+      },
+      {
+        name: "Search and tracking of elements created by the admin.",
+        icon: null,
+      },
+      {
+        name: "Worked as a team to coordinate the integration of different functionalities.",
+        icon: null,
+      },
+    ],
     link: "https://www.tracking.iunctus.com.co/",
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+    ],
     img: BannerIunctus,
   },
   {
-    title: "Formularios Area Cuadrada",
-    description:
-      "I was responsible for the layout of a new form and its functionality implementation. (This form is replicated on multiple pages).",
+    title: "Form Area Cuadrada",
+    description: [
+      { name: "Layout of new web and mobile form.", icon: null },
+      { name: "Form control and functionality.", icon: null },
+      { name: "The form was replicated on multiple pages.", icon: null },
+    ],
     link: "https://urban72.co/",
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+    ],
     img: BannerFormArea2,
   },
   {
-    title: "Formularios de asistencia Area Cuadrada",
-    description:
-      "I was responsible for the layout of a template for a new form and its functionality implementation. (This form is replicated on multiple pages).",
+    title: "Attendance Form Area Cuadrada",
+    description: [
+      {
+        name: "Planning and layout of web and mobile form template, considering it would be used on different pages.",
+        icon: null,
+      },
+      { name: "Form control and functionality.", icon: null },
+      {
+        name: "Creating the template facilitated its implementation and replication on multiple pages.",
+        icon: null,
+      },
+    ],
     link: "https://asistencia.vallartaenchia.co/",
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+    ],
     img: BannerAsistenciaArea2,
   },
   {
     title: "Electa",
-    description:
-      "Development of a social network for political candidates to create their network of followers, working collaboratively with other developers. I was responsible for web layout and backend functionality implementation. I developed the user creation system and registration using different authentication options. I contributed to the implementation of real-time chat, surveys, and graphs to enrich the user experience on the social network.",
+    description: [
+      {
+        name: "Development working as a team with other developers.",
+        icon: null,
+      },
+      { name: "Web layout.", icon: null },
+      { name: "Implementation of backend functionalities.", icon: null },
+      {
+        name: "Development of user creation and registration system through different authentication options.",
+        icon: null,
+      },
+      {
+        name: "Implementation of real-time chat with SOCKET.IO.",
+        icon: null,
+      },
+      {
+        name: "Contributed to the creation of surveys and charts.",
+        icon: null,
+      },
+    ],
     link: undefined,
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+      { name: "Socket.Io", icon: SiSocketdotio },
+    ],
     img: BannerElecta,
   },
   {
-    title: "Voceros",
-    description:
-      "Web and mobile layout of a platform for spokespersons of candidates, with controlled registration and login forms with error handling, and native drag and drop for file uploads.",
+    title: "Electa Admin",
+    description: [
+      {
+        name: "Development working as a team with another developer.",
+        icon: null,
+      },
+      { name: "Web layout.", icon: null },
+      { name: "Login functionality.", icon: null },
+      { name: "Implementation of backend functionalities.", icon: null },
+      {
+        name: "Development of multimedia posts, news, surveys, challenges, and WhatsApp groups creation system.",
+        icon: null,
+      },
+    ],
     link: undefined,
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+      { name: "Socket.Io", icon: SiSocketdotio },
+    ],
+    img: BannerElectaAdmin,
+  },
+  {
+    title: "Voceros",
+    description: [
+      {
+        name: "Web and mobile layout of a platform for candidate spokespersons.",
+        icon: null,
+      },
+      {
+        name: "Controlled registration and login form.",
+        icon: null,
+      },
+      { name: "File upload with native drag and drop.", icon: null },
+      { name: "Controlled form for creating new records", icon: null },
+    ],
+    link: undefined,
+    tecnologias: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Typescript", icon: SiTypescript },
+    ],
     img: BannerVoceros,
   },
 ];
