@@ -7,6 +7,8 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
+import jsPDF from "jspdf";
+
 export const Presentation = () => {
   const [copied, setCopied] = useState(false);
   const handleClick = () => {
@@ -32,6 +34,19 @@ export const Presentation = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const handleDownloadEs = () => {
+      let doc = jsPDF("portrait", "px", "a4", false);
+      doc.addImage(
+        "https://i.ibb.co/WzVsqF3/CV-Gonzalo-Cervan-ES.jpg",
+        "JPG",
+        0,
+        0,
+        417,
+        653
+      );
+      doc.save("Gonzalo Cervan Curriculum");
+  };
+
   return (
     <div
       id="Presentation"
@@ -51,7 +66,7 @@ export const Presentation = () => {
                   exit={{ opacity: 0, y: -100 }}
                   className="absolute w-40 bg-customBlue rounded-sm py-1"
                 >
-                  Email copiado!
+                  Email copied!
                 </motion.div>
               ) : null}
             </AnimatePresence>
@@ -64,41 +79,60 @@ export const Presentation = () => {
           </a>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row border-b-2 py-10 border-gray-600 px-10 sm:px-28 relative h-[90vh]">
+      <div className="w-full flex flex-col h-auto md:flex-row border-b-2 py-10 border-gray-600 px-10 sm:px-28 relative md:h-[90vh]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, delay: 0.6 }}
-          className="w-full md:w-2/3 h-full flex flex-col items-start pt-5 sm:pt-20 justify-center"
+          className="w-full md:w-2/3 h-auto flex flex-col items-start pt-5 sm:pt-20 justify-center z-[9999]"
         >
-          <p className="text-white sm:hidden inline font-semibold text-[2rem]">
-            Gonzalo Cervan
-          </p>
-          <h1 className="text-[3rem] lg:text-[5rem] text-white font-bold">
-            Hola! soy
+          <h1 className="text-[2rem] lg:text-[5rem] text-white font-bold">
+            Hola! Soy
           </h1>
-          <h1 className="text-[3rem] lg:text-[5rem] italic text-white font-bold">
-            Gonzalo Cervan,
+          <h1 className="text-[2rem] lg:text-[5rem] italic text-white font-bold">
+            Gonzalo Cervan
           </h1>
           <h1
-            className={`text-[3rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
+            className={`text-[2.5rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
           >
-            FRONT END DEVELOPER
+            DESARROLLADOR 
           </h1>
-          <div className="sm:ml-28 mt-10 mx-auto ">
+          <h1
+            className={`text-[2.5rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
+          >
+            FRONT END 
+          </h1>
+          <div className="w-full gap-4 mt-4 md:mt-0 md:inline hidden flex-col sm:ml-28 sm:mt-10 sm:mx-auto ">
             <a
               href="#Contact"
-              className="md:text-2xl bg-customBlue border-4 border-customBlue text-white rounded-full px-6 py-2 focus:outline-none "
+              className="w-full md:text-2xl bg-customBlue border-4 border-customBlue text-center text-white rounded-full px-6 py-2 focus:outline-none "
             >
               Contacto
             </a>
-            <button className="md:text-2xl border-4 border-customBlue text-customBlue rounded-full px-6 py-2 focus:outline-none ml-10">
+            <button
+              onClick={() => handleDownloadEs()}
+              className="w-full md:w-min md:text-2xl border-4 border-customBlue text-customBlue text-center rounded-full px-6 py-2 focus:outline-none md:ml-10"
+            >
               Curriculum
             </button>
           </div>
         </motion.div>
-        <div className="absolute right-24 -bottom-10 w-3/5 h-fit flex items-center justify-center">
-          <Image src={FotoPerfil} alt="Imagen" className="w-2/3" />
+        <div className="w-full h-auto md:absolute right-24 -bottom-10 md:w-3/5 md:h-fit flex items-center justify-center">
+          <Image src={FotoPerfil} alt="Imagen" className="w-full md:w-2/3" />
+        </div>
+        <div className="w-full gap-4 mt-4 md:mt-0 md:hidden flex flex-col sm:ml-28 sm:mt-10 sm:mx-auto ">
+          <a
+            href="#Contact"
+            className="w-full md:text-2xl bg-customBlue border-4 border-customBlue text-center text-white rounded-full px-6 py-2 focus:outline-none "
+          >
+            Contacto
+          </a>
+          <button
+            onClick={() => handleDownloadEs()}
+            className="w-full md:w-min md:text-2xl border-4 border-customBlue text-customBlue text-center rounded-full px-6 py-2 focus:outline-none md:ml-10"
+          >
+            Curriculum
+          </button>
         </div>
       </div>
     </div>
