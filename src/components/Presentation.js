@@ -86,19 +86,19 @@ export const Presentation = () => {
           transition={{ duration: 2, delay: 0.6 }}
           className="w-full md:w-2/3 h-auto flex flex-col items-start pt-5 sm:pt-20 justify-center z-[9999]"
         >
-          <h1 className="text-[2rem] lg:text-[5rem] text-white font-bold">
+          <h1 className="text-[1.75rem] lg:text-[5rem] text-white font-bold">
             Hola! Soy
           </h1>
-          <h1 className="text-[2rem] lg:text-[5rem] italic text-white font-bold">
+          <h1 className="text-[1.75rem] lg:text-[5rem] italic text-white font-bold">
             Gonzalo Cervan
           </h1>
           <h1
-            className={`text-[2.5rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
+            className={`text-[2rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
           >
             DESARROLLADOR 
           </h1>
           <h1
-            className={`text-[2.5rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
+            className={`text-[2rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
           >
             FRONT END 
           </h1>

@@ -19,7 +19,7 @@ export const NavMobile = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "just" }}
             exit={{ opacity: 0, y: -1000 }}
-            className="fixed sm:hidden left-0 top-0 backdrop-blur-md bg-customGray bg-opacity-40 w-full h-screen z-[99]"
+            className="fixed sm:hidden left-0 top-0 backdrop-blur-md bg-customGray bg-opacity-40 w-full h-screen z-[999999]"
           >
             <LinksMobile setVerNav={setVerNav} />
             <AnimatePresence>
