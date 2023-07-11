@@ -8,7 +8,7 @@ export const LinksMobile = ({ setVerNav }) => {
     { id: 5, href: "#Contact", text: "Contacto" },
   ];
   return (
-    <ul className="w-full flex flex-col h-full items-center justify-center py-40 gap-4">
+    <ul className="w-full flex flex-col h-full items-center justify-center py-40 gap-4 z-[99999]">
       {links.map((el, i) => (
         <li
           key={el.id}
