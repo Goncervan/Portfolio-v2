@@ -104,12 +104,13 @@ export const EnglishPresentation = () => {
             >
               Contact
             </a>
-            <button
-              onClick={() => handleDownloadEn()}
+            <a
+              href="./Resume-Gonzalo-Cervan.pdf"
+              target="_blank"
               className="w-full md:w-min md:text-2xl border-4 border-customBlue text-customBlue text-center rounded-full px-6 py-2 focus:outline-none md:ml-10"
             >
               Resume
-            </button>
+            </a>
           </div>
         </motion.div>
         <div className="w-full h-auto md:absolute right-24 -bottom-10 md:w-3/5 md:h-fit flex items-center justify-center">
@@ -122,12 +123,13 @@ export const EnglishPresentation = () => {
           >
             Contact
           </a>
-          <button
-            onClick={() => handleDownloadEn()}
+          <a
+            href="./Resume-Gonzalo-Cervan.pdf"
+            target="_blank"
             className="w-full md:w-min md:text-2xl border-4 border-customBlue text-customBlue text-center rounded-full px-6 py-2 focus:outline-none md:ml-10"
           >
             Resume
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -35,16 +35,16 @@ export const Presentation = () => {
   }, []);
 
   const handleDownloadEs = () => {
-      let doc = jsPDF("portrait", "px", "a4", false);
-      doc.addImage(
-        "https://i.ibb.co/WzVsqF3/CV-Gonzalo-Cervan-ES.jpg",
-        "JPG",
-        0,
-        0,
-        417,
-        653
-      );
-      doc.save("Gonzalo Cervan Curriculum");
+    let doc = jsPDF("portrait", "px", "a4", false);
+    doc.addImage(
+      "https://i.ibb.co/WzVsqF3/CV-Gonzalo-Cervan-ES.jpg",
+      "JPG",
+      0,
+      0,
+      417,
+      653
+    );
+    doc.save("Gonzalo Cervan Curriculum");
   };
 
   return (
@@ -95,12 +95,12 @@ export const Presentation = () => {
           <h1
             className={`text-[2rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
           >
-            DESARROLLADOR 
+            DESARROLLADOR
           </h1>
           <h1
             className={`text-[2rem] lg:text-[5rem] text-customBlue font-bold z-[99] ${styles.front}`}
           >
-            FRONT END 
+            FRONT END
           </h1>
           <div className="w-full gap-4 mt-4 md:mt-0 md:inline hidden flex-col sm:ml-28 sm:mt-10 sm:mx-auto ">
             <a
@@ -109,12 +109,14 @@ export const Presentation = () => {
             >
               Contacto
             </a>
-            <button
-              onClick={() => handleDownloadEs()}
+            <a
+              href="./CV-Gonzalo-Cervan.pdf"
+              target="_blank"
+              // onClick={() => handleDownloadEs()}
               className="w-full md:w-min md:text-2xl border-4 border-customBlue text-customBlue text-center rounded-full px-6 py-2 focus:outline-none md:ml-10"
             >
               Curriculum
-            </button>
+            </a>
           </div>
         </motion.div>
         <div className="w-full h-auto md:absolute right-24 -bottom-10 md:w-3/5 md:h-fit flex items-center justify-center">
@@ -127,12 +129,13 @@ export const Presentation = () => {
           >
             Contacto
           </a>
-          <button
-            onClick={() => handleDownloadEs()}
+          <a
+            href="./CV-Gonzalo-Cervan.pdf"
+            target="_blank"
             className="w-full md:w-min md:text-2xl border-4 border-customBlue text-customBlue text-center rounded-full px-6 py-2 focus:outline-none md:ml-10"
           >
             Curriculum
-          </button>
+          </a>
         </div>
       </div>
     </div>
